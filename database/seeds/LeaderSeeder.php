@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Leader;
 
 class LeaderSeeder extends Seeder
 {
@@ -11,6 +12,6 @@ class LeaderSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Leader::class, 10) -> create();
     }
 }
