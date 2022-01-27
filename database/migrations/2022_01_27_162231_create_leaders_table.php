@@ -14,8 +14,16 @@ class CreateLeadersTable extends Migration
     public function up()
     {
         Schema::create('leaders', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+
+            $table -> id();
+
+            $table -> string('name', 60);
+            $table -> string('surname', 60);
+            $table -> date('assumption_date');
+            $table -> integer('wage');
+            $table -> integer('bonus');
+
+            $table -> timestamps();
         });
     }
 
