@@ -11,7 +11,6 @@ class Employee extends Model
         'name',
         'surname', 
         'assumption_date',
-        'cf',
         'wage',
         'role'
     ];

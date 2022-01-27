@@ -11,8 +11,8 @@ $factory->define(Employee::class, function (Faker $faker) {
         'name' => $faker -> firstName(),
         'surname' => $faker -> lastName(), 
         'assumption_date' => $faker -> date(),
-        'cf' => $faker -> taxId(),
         'wage' => $faker -> numberBetween(100000, 300000),
         'role' => $faker -> word()
     ];
 });
+

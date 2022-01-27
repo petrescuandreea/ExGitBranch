@@ -20,7 +20,6 @@ class CreateEmployeesTable extends Migration
             $table -> string('name', 60);
             $table -> string('surname', 60);
             $table -> date('assumption_date');
-            $table -> string('cf');
             $table -> integer('wage');
             $table -> string('role');
 
